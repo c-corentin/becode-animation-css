@@ -18,6 +18,8 @@ body {
         width: 400px;
         border-radius: 10px;
         transition-duration: $trans_time;
+        height: 600px;
+        overflow: hidden;
 
         #date {
             padding: 10px;
@@ -83,10 +85,16 @@ body {
         }
 
         #comments {
-            margin: 10px;
+            width: 100%;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            z-index: 3;
+            background-color: white;
 
             p {
                 display: inline;
+                margin-right: 30px;
             }
         }
     }
@@ -98,10 +106,8 @@ body {
 
 
         #bg_photo {
-            background-size: 440px 440px;
-            background-position: -20px -20px;
+           transform: scale(1.3);
             opacity: 60%;
-            // transition-duration: 1s;
         }
 
         article {
@@ -110,6 +116,7 @@ body {
 
             #hidden_txt {
                 display: contents;
+                transition-delay: 0.5s;
             }
         }
 
