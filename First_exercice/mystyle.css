@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 400px;
+    font-weight: bold;
+    border: 3px white solid;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;    
+    transform: scale(1.5);
+    transition-duration: 1s;
+    transform: translate(120px,0px);
+}
