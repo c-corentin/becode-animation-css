@@ -1,0 +1,112 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #C4C6C2;
+  padding-top: 100px;
+}
+
+body section {
+  margin: auto;
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body section #date {
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  background-color: #D71A21;
+  float: right;
+  margin-bottom: -40px;
+  margin-right: 20px;
+  width: 40px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+body section #bg_photo {
+  background-image: url("https://66.media.tumblr.com/4e95a84241dd1cec5bf4ada8ece073d3/tumblr_o1d4s64s861ut1t2wo1_1280.jpg");
+  background-size: 400px 400px;
+  height: 400px;
+  max-width: 100%;
+  background-color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  position: relative;
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body section article {
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body section article #txt_photo {
+  padding: 10px;
+  color: white;
+  background-color: #D71A21;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+  margin-left: -10px;
+}
+
+body section article h2,
+body section article h3 {
+  font-family: "Roboto", sans-serif;
+  color: #D71A21;
+  font-size: 200%;
+}
+
+body section article h3 {
+  margin-top: -20px;
+}
+
+body section article #hidden_txt {
+  display: none;
+}
+
+body section #comments {
+  margin: 10px;
+}
+
+body section #comments p {
+  display: inline;
+}
+
+body section:hover {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body section:hover #bg_photo {
+  background-size: 440px 440px;
+  background-position: -20px -20px;
+  opacity: 60%;
+}
+
+body section:hover article {
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body section:hover article #hidden_txt {
+  display: contents;
+}
+/*# sourceMappingURL=style.css.map */

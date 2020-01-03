@@ -1,0 +1,117 @@
+$theme_color: #D71A21;
+$title_font: 'Roboto',
+sans-serif;
+$txt_color: #C4C6C2;
+$txt_font: 'Montserrat',
+sans-serif;
+$img_url: "https://66.media.tumblr.com/4e95a84241dd1cec5bf4ada8ece073d3/tumblr_o1d4s64s861ut1t2wo1_1280.jpg";
+$trans_time: 1s;
+
+body {
+    font-family: $txt_font;
+    color: $txt_color;
+    padding-top: 100px;
+
+    section {
+        margin: auto;
+        position: relative;
+        width: 400px;
+        border-radius: 10px;
+        transition-duration: $trans_time;
+
+        #date {
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            background-color: $theme_color;
+            float: right;
+            margin-bottom: -40px;
+            margin-right: 20px;
+            width: 40px;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        #bg_photo {
+            background-image: url($img_url);
+            background-size: 400px 400px;
+            height: 400px;
+            max-width: 100%;
+            background-color: white;
+            transition-duration: $trans_time;
+            position: relative;
+            z-index: 1;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+
+        article {
+            padding: 10px;
+            position: relative;
+            z-index: 2;
+            background-color: white;
+            transition-duration: $trans_time;
+
+            #txt_photo {
+                padding: 10px;
+                color: white;
+                background-color: $theme_color;
+                width: fit-content;
+                margin-top: -40px;
+                position: relative;
+                z-index: 2;
+                margin-left: -10px;
+            }
+
+            h2,
+            h3 {
+                font-family: $title_font;
+                color: $theme_color;
+                font-size: 200%;
+            }
+
+            h3 {
+                margin-top: -20px;
+            }
+
+            #hidden_txt {
+                display: none;
+            }
+        }
+
+        #comments {
+            margin: 10px;
+
+            p {
+                display: inline;
+            }
+        }
+    }
+
+    section:hover {
+
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+        transition-duration: $trans_time;
+
+
+        #bg_photo {
+            background-size: 440px 440px;
+            background-position: -20px -20px;
+            opacity: 60%;
+            // transition-duration: 1s;
+        }
+
+        article {
+            transform: translate(0, -100px);
+            transition-duration: $trans_time;
+
+            #hidden_txt {
+                display: contents;
+            }
+        }
+
+    }
+}
